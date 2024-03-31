@@ -1,0 +1,142 @@
+
+/*second div backround-color:FFE3BB*/
+body{
+    background-color: #96EFFF;
+}
+
+.first-conrtainer{
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(2,1fr);
+    
+}
+.circle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:end;
+}
+.photo{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 5px solid rgba(255, 217, 0, 0.874);
+}
+h2{
+    font-size: 40px;
+}
+.intro{
+    grid-row-start: 2;
+    text-align: center;
+    font-size: 35px;
+}
+h2,p{
+    font-family: 'Caveat', cursive;
+}
+
+
+.tree{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    position: relative;
+    top: -80px;
+
+}
+.quote{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.quote>p{
+    color: rgba(255, 217, 0, 0.651);
+    font-size: 50px;
+
+}
+.sun{
+    position: relative;
+    top: -200px;
+}
+
+.middle-container{
+    display: grid;
+    height: 100vh;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(2,1fr);
+}
+.guitarIntro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-row: span 2;
+}
+.guitarparagraph{
+    font-size:40px ;
+    text-align: center;
+}
+.middle-container-guitar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.guitar-photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ed-sheeran-container{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+.ed-sheeran-photo{
+    border-radius: 50%;
+    position: relative;
+    top: 20px;
+}
+.ed-sheeran-container>p{
+    color: rgb(43, 186, 226);
+    font-size: 50px;
+
+}
+
+
+.pb-2{
+    text-align: center;
+    font-size: 80px;
+}
+.px-4 p{
+    font-size: 30px;
+}
+.last p{
+    font-size: 60px;
+}
+
+@media (max-width:930px){
+
+    .first-conrtainer{
+        display:flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .middle-container{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .tree{
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        top:0px;
+    
+    }
+
+}
+
+
